@@ -3,6 +3,9 @@
 Answer each question in 3 to 5 sentences. Be specific and honest about what actually happened while you worked. This is about your process, not trying to sound perfect.
 
 ## 1. What was broken when you started?
+1. Everytime I submitted a guess the game told me to go higher, even when the guess was at or above the threshold
+2. I couldn't start a new game without keeping the final results of the previous one on the bottom
+3. When I chose a new difficulty, I was still told to pick a number between one and a hundred regardless of the actualy threshold shown on the side bar.
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
@@ -14,38 +17,31 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
+| | | | |Accurate hints      "Too High" Hints
+| | | | |working game creation
 | | | | |
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- To solve the first error, I explained the original purpose of the program to my Copilot and then asked him to explain why the code was behaving the way it was. Afterwards I had the AI generate a few solution ideas and instructed it on how to fix the code based on the previous steps. Although the AI fixed the code correctly, However when utilizing the AI to generate pytests it mislead me to apply the pytest command without being cd into the correct folder.
 
 ---
 
 ## 3. Debugging and testing your fixes
-
-- How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
-- Did AI help you design or understand any tests? How?
+  - In order to decide whether a bug was fixed or not, I would use the AI to generate pytest alongside running the code and utilizing the features that were broken. A major test that I performed was the pytest to test if the code performed correctly.
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+- Streamlit re-executes the code everytime a user interacts with a button or widget. 
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+- One habit I want to reuse from this project is double checking the results given by AI.
+- One thing I would do differently is have the AI generate multiple solutions to the problem. 
+- This project showed that I can use generated code without being relian on the AI

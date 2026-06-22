@@ -26,29 +26,33 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+Guessing game where the user guesses a number between one and a limit determined by the games difficulty
 - [ ] Detail which bugs you found.
+Being unable to create a new game, innacurate hints and a non-working difficulty feature.
 - [ ] Explain what fixes you applied.
+I fixed 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User starts the guess with 10
+2. Game returns Too Low
+3. Score updates
+4. User enters a guess of 90 and the game returns Too High
+5. Score updates
+6. Game ends when the correct number is guessed
+
+
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
-```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+tests\test_game_logic.py ......                                                                              [100%]
 
+================================================ 6 passed in 1.83s ================================================
+PS C:\Users\alade\OneDrive\Desktop\JS\Projects\Alade-Glitch_Investigator> 
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
